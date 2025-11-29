@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://5kg0l26b77ag"]
+
+[ext_resource type="PackedScene" uid="uid://bks63npghwwgt" path="res://Objects/keylistener.tscn" id="1_4mqfr"]
+[ext_resource type="PackedScene" uid="uid://c45b5tdxodgh7" path="res://Objects/falling_note.tscn" id="2_se8be"]
+
+[node name="Rythmn game level1" type="Node2D"]
+
+[node name="Keylistener2" parent="." instance=ExtResource("1_4mqfr")]
+position = Vector2(-68, 216)
+scale = Vector2(0.3, 0.3)
+key_name = "buttonf"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(3, -2)
+
+[node name="Keylistener" parent="." instance=ExtResource("1_4mqfr")]
+position = Vector2(-172, 216)
+scale = Vector2(0.3, 0.3)
+key_name = "buttond"
+
+[node name="Keylistener3" parent="." instance=ExtResource("1_4mqfr")]
+position = Vector2(60, 216)
+scale = Vector2(0.3, 0.3)
+key_name = "buttonj"
+
+[node name="Keylistener4" parent="." instance=ExtResource("1_4mqfr")]
+position = Vector2(166, 216)
+scale = Vector2(0.3, 0.3)
+key_name = "buttonk"
+
+[node name="Falling note" parent="." instance=ExtResource("2_se8be")]
+position = Vector2(-172, -420)

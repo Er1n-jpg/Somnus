@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c45b5tdxodgh7"]
+
+[ext_resource type="Texture2D" uid="uid://d1vghn11w3hdi" path="res://images/chiikawa-cute-cartoon-character-illustration-LzYsbdiN.jpg" id="1_v8ik5"]
+[ext_resource type="Script" uid="uid://dlkpxxo3mlugu" path="res://Objects/falling_note.gd" id="2_8adoi"]
+
+[node name="Falling note" type="Sprite2D"]
+position = Vector2(240, 193.25)
+scale = Vector2(0.12, 0.118575)
+texture = ExtResource("1_v8ik5")
+script = ExtResource("2_8adoi")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bks63npghwwgt"]
+
+[ext_resource type="Texture2D" uid="uid://3xp8psquyy3g" path="res://images/chiikawa-cute-cat-doodle-wyqFKUnf_t.jpg" id="1_274c2"]
+[ext_resource type="Script" uid="uid://bj4dr16exi2i7" path="res://Objects/keylistener.gd" id="1_bmb3q"]
+
+[node name="Keylistener" type="Sprite2D"]
+position = Vector2(239, 262)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_274c2")
+script = ExtResource("1_bmb3q")
