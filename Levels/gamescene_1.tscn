@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cb6xmor0356tt" path="res://images/dirt.png" id="2_e5eq2"]
 [ext_resource type="Texture2D" uid="uid://dv6jdde4anuun" path="res://images/dirt wall.png" id="3_m3ms7"]
 [ext_resource type="Texture2D" uid="uid://c5ngpu4bkyc5x" path="res://images/spring.png" id="4_to70f"]
-[ext_resource type="PackedScene" uid="uid://jyla0ywfpjr5" path="res://player.tscn" id="5_seym0"]
+[ext_resource type="PackedScene" uid="uid://jyla0ywfpjr5" path="res://Objects/player.tscn" id="5_seym0"]
 [ext_resource type="Script" uid="uid://xarxrynvfp53" path="res://Levels/gamescene.gd" id="6_by8v0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_52bay"]

@@ -1,0 +1,93 @@
+[gd_scene load_steps=6 format=3 uid="uid://bc58qibdoxnr"]
+
+[ext_resource type="Script" uid="uid://c58px38h5li48" path="res://UIs/main_menu.gd" id="1_3es34"]
+[ext_resource type="FontFile" uid="uid://cu26eaxno85ff" path="res://Milkyway DEMO.ttf" id="1_6ucrw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ucrw"]
+bg_color = Color(0.344129, 0.484556, 0.5942, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3es34"]
+bg_color = Color(0.347573, 0.551409, 0.516473, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tu6to"]
+bg_color = Color(0.471253, 0.621029, 0.735709, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Main menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_3es34")
+
+[node name="Button 1" type="Button" parent="."]
+layout_mode = 2
+offset_left = 42.0
+offset_top = 443.0
+offset_right = 1116.0
+offset_bottom = 543.0
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_6ucrw")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_6ucrw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3es34")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tu6to")
+text = "Load progress"
+icon_alignment = 1
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.04
+anchor_top = 0.28
+anchor_right = 0.04
+anchor_bottom = 0.28
+offset_left = 0.920002
+offset_top = 371.24
+offset_right = 1070.92
+offset_bottom = 440.24
+theme_override_constants/separation = 15
+
+[node name="Newgane" type="Button" parent="BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_6ucrw")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_tu6to")
+text = "Start new game"
+icon_alignment = 1
+
+[node name="Settings" type="Button" parent="BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_6ucrw")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_tu6to")
+text = "Settings"
+icon_alignment = 1
+
+[node name="Quit game" type="Button" parent="BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_6ucrw")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_tu6to")
+text = "Quit game
+"
+icon_alignment = 1
+
+[connection signal="pressed" from="Button 1" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="BoxContainer/Newgane" to="." method="_on_newgame_pressed"]
+[connection signal="pressed" from="BoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="BoxContainer/Quit game" to="." method="_on_quit_game_pressed"]

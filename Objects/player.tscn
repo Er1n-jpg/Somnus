@@ -1,36 +1,36 @@
 [gd_scene load_steps=10 format=3 uid="uid://jyla0ywfpjr5"]
 
-[ext_resource type="Texture2D" uid="uid://c7d4g5thmbwjj" path="res://images/godotwaka2.png" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://c7d4g5thmbwjj" path="res://images/godotwaka2.png" id="1_y0qk3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
-atlas = ExtResource("1_4flbx")
+atlas = ExtResource("1_y0qk3")
 region = Rect2(472, 708, 472, 354)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i3pqv"]
-atlas = ExtResource("1_4flbx")
+atlas = ExtResource("1_y0qk3")
 region = Rect2(0, 708, 472, 354)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hqtel"]
-atlas = ExtResource("1_4flbx")
+atlas = ExtResource("1_y0qk3")
 region = Rect2(0, 354, 472, 354)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sweqy"]
-atlas = ExtResource("1_4flbx")
+atlas = ExtResource("1_y0qk3")
 region = Rect2(472, 354, 472, 354)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2hs0m"]
-atlas = ExtResource("1_4flbx")
+atlas = ExtResource("1_y0qk3")
 region = Rect2(944, 708, 472, 354)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jxqw"]
-atlas = ExtResource("1_4flbx")
+atlas = ExtResource("1_y0qk3")
 region = Rect2(944, 354, 472, 354)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dw050"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_4flbx")
+"texture": ExtResource("1_y0qk3")
 }],
 "loop": true,
 "name": &"idle",

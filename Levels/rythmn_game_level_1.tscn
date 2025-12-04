@@ -31,6 +31,5 @@ scale = Vector2(0.3, 0.3)
 script = ExtResource("1_cyyxf")
 fall_speed = 2.0
 
-[node name="Falling note" parent="." instance=ExtResource("2_se8be")]
 [node name="Falling note" parent="." instance=ExtResource("2_lfnkg")]
 position = Vector2(-172, -335)

@@ -1,0 +1,129 @@
+[gd_scene load_steps=4 format=3 uid="uid://dx3y05o74bevw"]
+
+[ext_resource type="FontFile" uid="uid://cu26eaxno85ff" path="res://Milkyway DEMO.ttf" id="1_r0khw"]
+[ext_resource type="Texture2D" uid="uid://b43nenx88vivy" path="res://images/Screenshot_2025-12-04_180216-removebg-preview.png" id="2_i0lw0"]
+[ext_resource type="Texture2D" uid="uid://bf3j3vvxi4l3w" path="res://images/Screenshot_2025-12-04_180203-removebg-preview.png" id="3_7a77h"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Controls" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.155
+anchor_bottom = 0.164
+offset_left = 241.0
+offset_top = 34.0
+offset_right = 753.44
+offset_bottom = -14.272
+text = "Controls
+"
+
+[node name="Callibration" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.155
+anchor_bottom = 0.164
+offset_left = 242.0
+offset_top = 107.0
+offset_right = 754.44
+offset_bottom = 58.728
+text = "Callibrate
+"
+
+[node name="Help" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.155
+anchor_bottom = 0.164
+offset_left = 243.0
+offset_top = 180.0
+offset_right = 755.44
+offset_bottom = 131.728
+text = "HELP!!!"
+
+[node name="HSlider2" type="HSlider" parent="."]
+offset_left = 273.0
+offset_top = 335.0
+offset_right = 677.0
+offset_bottom = 371.0
+
+[node name="HSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 273.0
+offset_top = 265.0
+offset_right = 677.0
+offset_bottom = 301.0
+
+[node name="HSlider3" type="HSlider" parent="."]
+offset_left = 272.0
+offset_top = 406.0
+offset_right = 676.0
+offset_bottom = 442.0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 755.0
+offset_top = 272.0
+offset_right = 1016.0
+offset_bottom = 340.0
+theme_override_fonts/normal_font = ExtResource("1_r0khw")
+theme_override_font_sizes/normal_font_size = 35
+text = "BGM volume"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 757.0
+offset_top = 321.0
+offset_right = 1007.0
+offset_bottom = 394.0
+theme_override_fonts/normal_font = ExtResource("1_r0khw")
+theme_override_font_sizes/normal_font_size = 33
+text = "Sound effect volume"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+offset_left = 757.0
+offset_top = 409.0
+offset_right = 1007.0
+offset_bottom = 482.0
+theme_override_fonts/normal_font = ExtResource("1_r0khw")
+theme_override_font_sizes/normal_font_size = 35
+text = "Music volume"
+
+[node name="Screenshot2025-12-04180216-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(704, 284)
+scale = Vector2(0.143636, 0.176923)
+texture = ExtResource("2_i0lw0")
+
+[node name="Screenshot2025-12-04180216-removebg-preview3" type="Sprite2D" parent="."]
+position = Vector2(708, 421)
+scale = Vector2(0.143636, 0.176923)
+texture = ExtResource("2_i0lw0")
+
+[node name="Screenshot2025-12-04180216-removebg-preview2" type="Sprite2D" parent="."]
+position = Vector2(707, 350)
+scale = Vector2(0.143636, 0.176923)
+texture = ExtResource("2_i0lw0")
+
+[node name="Screenshot2025-12-04180203-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(247.25, 284.25)
+scale = Vector2(0.17663, 0.202778)
+texture = ExtResource("3_7a77h")
+
+[node name="Screenshot2025-12-04180203-removebg-preview3" type="Sprite2D" parent="."]
+position = Vector2(249, 425)
+scale = Vector2(0.17663, 0.202778)
+texture = ExtResource("3_7a77h")
+
+[node name="Screenshot2025-12-04180203-removebg-preview2" type="Sprite2D" parent="."]
+position = Vector2(248, 352)
+scale = Vector2(0.17663, 0.202778)
+texture = ExtResource("3_7a77h")
