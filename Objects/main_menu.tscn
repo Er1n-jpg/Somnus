@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://bc58qibdoxnr"]
+
+[ext_resource type="FontFile" uid="uid://cu26eaxno85ff" path="res://Milkyway DEMO.ttf" id="1_tu6to"]
+
+[node name="Main menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button 1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 419.0
+offset_right = 506.0
+offset_bottom = 508.0
+theme_override_fonts/font = ExtResource("1_tu6to")
+text = "Load progress"
+
+[node name="Button 2" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button2" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 608.0
+offset_top = 422.0
+offset_right = 975.0
+offset_bottom = 508.0
+theme_override_fonts/font = ExtResource("1_tu6to")
+text = "Start new game
+"
