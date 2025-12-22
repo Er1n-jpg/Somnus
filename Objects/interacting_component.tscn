@@ -11,7 +11,10 @@ script = ExtResource("1_yv85h")
 
 [node name="Interaction lable" type="Label" parent="."]
 offset_left = -171.0
-offset_top = -47.0
+offset_top = -92.0
 offset_right = 228.0
-offset_bottom = -24.0
+offset_bottom = -69.0
 text = "Click space or \"e\" to interact with NPCS and objects!"
+
+[connection signal="area_entered" from="interact range" to="." method="_on_interact_range_area_entered"]
+[connection signal="area_exited" from="interact range" to="." method="_on_interact_range_area_exited"]

@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://w4hibnln0ocs"]
+
+[ext_resource type="Script" uid="uid://dw1dwt7p5wsjy" path="res://Objects/joe.gd" id="1_ij7b5"]
+[ext_resource type="Texture2D" uid="uid://chsat30x538jg" path="res://images/Screenshot 2025-12-22 161619.png" id="2_y2rfj"]
+[ext_resource type="PackedScene" uid="uid://b4b3aj3ompeb8" path="res://Objects/npc.tscn" id="3_rqq4j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aai7a"]
+size = Vector2(175, 188)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qrb1o"]
+radius = 209.01
+
+[node name="Joe" type="StaticBody2D"]
+script = ExtResource("1_ij7b5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(408.5, 250)
+shape = SubResource("RectangleShape2D_aai7a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(409, 250)
+texture = ExtResource("2_y2rfj")
+
+[node name="interactable" parent="." instance=ExtResource("3_rqq4j")]
+position = Vector2(432, 181)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactable"]
+position = Vector2(-22, 78)
+shape = SubResource("CircleShape2D_qrb1o")

@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://jyla0ywfpjr5"]
+[gd_scene load_steps=11 format=3 uid="uid://jyla0ywfpjr5"]
 
 [ext_resource type="Texture2D" uid="uid://c7d4g5thmbwjj" path="res://images/godotwaka2.png" id="1_y0qk3"]
+[ext_resource type="PackedScene" uid="uid://bs60bht0fuimd" path="res://Objects/interacting_component.tscn" id="2_3y5cq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("1_y0qk3")
@@ -77,8 +78,11 @@ sprite_frames = SubResource("SpriteFrames_dw050")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(89, 97.75)
+position = Vector2(90, 118)
 shape = SubResource("RectangleShape2D_4flbx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(86, 95)
+position = Vector2(99, 114)
+
+[node name="Interacting component" parent="." instance=ExtResource("2_3y5cq")]
+position = Vector2(88, 62)

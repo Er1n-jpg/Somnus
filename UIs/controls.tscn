@@ -1,0 +1,124 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu1l5af8tm8a5"]
+
+[ext_resource type="Script" uid="uid://be7hccsgpcwqu" path="res://UIs/controls.gd" id="1_lhvmj"]
+[ext_resource type="Script" uid="uid://7k4ch8trpdc8" path="res://UIs/up.gd" id="1_v7vk1"]
+[ext_resource type="Script" uid="uid://cftitk010uq32" path="res://UIs/down.gd" id="3_uwudh"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lhvmj")
+
+[node name="Up" type="MenuButton" parent="."]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 154.0
+offset_right = 309.0
+offset_bottom = 185.0
+text = "Up"
+switch_on_hover = true
+item_count = 3
+popup/item_0/text = "W"
+popup/item_0/id = 0
+popup/item_1/text = "Up arrow"
+popup/item_1/id = 1
+popup/item_2/id = 2
+script = ExtResource("1_v7vk1")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 289.0
+offset_top = 40.0
+offset_right = 786.0
+offset_bottom = 164.0
+theme_override_font_sizes/normal_font_size = 64
+text = "Controls menu
+"
+
+[node name="down" type="MenuButton" parent="."]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 254.0
+offset_right = 308.0
+offset_bottom = 285.0
+text = "Down
+"
+switch_on_hover = true
+item_count = 2
+popup/item_0/text = "s"
+popup/item_0/id = 0
+popup/item_1/text = "down key"
+popup/item_1/id = 1
+script = ExtResource("3_uwudh")
+
+[node name="Left" type="MenuButton" parent="."]
+layout_mode = 0
+offset_left = 756.0
+offset_top = 153.0
+offset_right = 888.0
+offset_bottom = 184.0
+text = "Left"
+switch_on_hover = true
+item_count = 2
+popup/item_0/text = "a"
+popup/item_0/id = 0
+popup/item_1/text = "left arrow"
+popup/item_1/id = 1
+
+[node name="Right" type="MenuButton" parent="."]
+layout_mode = 0
+offset_left = 754.0
+offset_top = 253.0
+offset_right = 886.0
+offset_bottom = 284.0
+text = "Right
+"
+switch_on_hover = true
+item_count = 2
+popup/item_0/text = "d"
+popup/item_0/id = 0
+popup/item_1/text = "Right arrow key"
+popup/item_1/id = 1
+
+[node name="Interact" type="MenuButton" parent="."]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 337.0
+offset_right = 308.0
+offset_bottom = 368.0
+text = "Interact
+"
+switch_on_hover = true
+item_count = 4
+popup/item_0/text = "e"
+popup/item_0/id = 0
+popup/item_1/text = "Space"
+popup/item_1/id = 1
+popup/item_2/text = "q"
+popup/item_2/id = 2
+popup/item_3/text = "j"
+popup/item_3/id = 3
+
+[node name="Interact2" type="MenuButton" parent="."]
+layout_mode = 0
+offset_left = 763.0
+offset_top = 333.0
+offset_right = 895.0
+offset_bottom = 364.0
+text = "Rythmn game key "
+switch_on_hover = true
+item_count = 4
+popup/item_0/text = "All arrow keys"
+popup/item_0/id = 0
+popup/item_1/text = "d,f,j,k"
+popup/item_1/id = 1
+popup/item_2/text = "a,s,d,f"
+popup/item_2/id = 2
+popup/item_3/text = "w,a,s,d"
+popup/item_3/id = 3
