@@ -10,4 +10,4 @@ func _on_interact():
 	if sprite_2d.frame == 0:
 		sprite_2d.frame = 1
 		interactable.is_interactable = false
-		print(" Hi player")
+		print("Hi player")
