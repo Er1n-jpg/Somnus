@@ -22,6 +22,8 @@ position = Vector2(409, 250)
 texture = ExtResource("2_y2rfj")
 
 [node name="interactable" parent="." instance=ExtResource("3_ij7b5")]
+collision_layer = 0
+collision_mask = 2
 interact_name = "Talk to joe"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interactable"]
