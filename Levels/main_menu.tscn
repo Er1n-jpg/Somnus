@@ -31,7 +31,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_3es34")
 
-[node name="Button 1" type="Button" parent="."]
+[node name="Loadgame" type="Button" parent="."]
 layout_mode = 2
 offset_left = 42.0
 offset_top = 443.0
@@ -87,7 +87,7 @@ text = "Quit game
 "
 icon_alignment = 1
 
-[connection signal="pressed" from="Button 1" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="Loadgame" to="." method="_on_load_pressed"]
 [connection signal="pressed" from="BoxContainer/Newgane" to="." method="_on_newgame_pressed"]
 [connection signal="pressed" from="BoxContainer/Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="BoxContainer/Quit game" to="." method="_on_quit_game_pressed"]

@@ -67,7 +67,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
-size = Vector2(122, 93.25)
+size = Vector2(68, 59.625)
 
 [node name="player" type="CharacterBody2D"]
 
@@ -78,12 +78,12 @@ sprite_frames = SubResource("SpriteFrames_dw050")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(98, 117)
+position = Vector2(98, 118)
 shape = SubResource("RectangleShape2D_4flbx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(99, 114)
 
 [node name="Interacting component" parent="." instance=ExtResource("2_3y5cq")]
-position = Vector2(88, 62)
+position = Vector2(97, 118)
 rotation = 0.00402662

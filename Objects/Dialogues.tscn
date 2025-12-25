@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://clad25g4usbfu"]
+
+[ext_resource type="Script" uid="uid://bd7pgs2h28nck" path="res://Objects/dialogues.gd" id="1_2h7lx"]
+
+[node name="Dialoguebox" type="CanvasLayer"]
+script = ExtResource("1_2h7lx")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Namelabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Dialoguelabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ContinuedIndicator" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

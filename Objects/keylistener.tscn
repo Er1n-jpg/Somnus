@@ -8,3 +8,8 @@ position = Vector2(239, 262)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_274c2")
 script = ExtResource("1_bmb3q")
+
+[node name="notespawntimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="notespawntimer" to="." method="_on_notespawntimer_timeout"]

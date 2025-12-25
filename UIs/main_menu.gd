@@ -18,7 +18,7 @@ func _on_newgame_pressed() -> void:
 	
 func _on_settings_pressed() -> void:
 	print("settings pressed")
-	var settingspage = preload("res://UIs/settings.tscn")
+	var settingspage = preload("res://node_2d.tscn")
 	get_tree().change_scene_to_packed(settingspage)
 	
 
@@ -29,3 +29,5 @@ func _on_quit_game_pressed() -> void:
 
 func _on_load_pressed() -> void:
 	print("load pressed")
+	var loadpagetemp = preload("res://Objects/Dialogues.tscn")
+	get_tree().change_scene_to_packed(loadpagetemp)
